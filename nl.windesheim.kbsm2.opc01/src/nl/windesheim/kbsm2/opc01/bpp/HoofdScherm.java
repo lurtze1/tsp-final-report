@@ -5,10 +5,18 @@
  */
 package nl.windesheim.kbsm2.opc01.bpp;
 
+import javax.swing.*;
+
 /**
  *
  * @author W7Home
  */
-public class HoofdScherm {
+public class HoofdScherm extends JFrame{
     
+    public HoofdScherm(){
+        setTitle("Selectie menu BPP simulator");
+        setSize(400, 400);
+        
+        
+    }
 }
