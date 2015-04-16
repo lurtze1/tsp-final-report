@@ -5,11 +5,16 @@
  */
 package nl.windesheim.kbsm2.opc01.tsp;
 
+import javax.swing.JFrame;
+
 /**
  *
  * @author Gebruiker
  */
 public class VisualScreen
 {
-
+    public VisualScreen(JFrame frame)
+    {
+        
+    }
 }
