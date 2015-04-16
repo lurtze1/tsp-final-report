@@ -38,5 +38,8 @@ public class HoofdScherm extends JFrame{
         add(firstFit);
         add(bestFit);
         add(decreasingOrder);
+        
+        //settings
+        setVisible(true);
     }
 }

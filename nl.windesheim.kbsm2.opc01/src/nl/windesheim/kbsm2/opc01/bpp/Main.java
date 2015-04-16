@@ -13,7 +13,7 @@ import javax.swing.*;
  */
 public class Main {
     
-    public static void Main (String[] args){
+    public static void main (String[] args){
         HoofdScherm b = new HoofdScherm();
         b.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
     }
