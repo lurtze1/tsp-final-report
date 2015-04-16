@@ -5,6 +5,8 @@
  */
 package nl.windesheim.kbsm2.opc01.tsp;
 
+import java.util.Stack;
+
 /**
  *
  * @author Gebruiker
@@ -12,4 +14,6 @@ package nl.windesheim.kbsm2.opc01.tsp;
 public class TSPMain
 {
 
+    private int numberOfNodes;
+    private Stack<Integer> stacks;
 }
