@@ -16,7 +16,8 @@ public class HoofdScherm extends JFrame{
     public HoofdScherm(){
         setTitle("Selectie menu BPP simulator");
         setSize(400, 400);
-        
+        GroupLayout layout = new GroupLayout(getContentPane());
+        getContentPane().setLayout(layout);
         
     }
 }
