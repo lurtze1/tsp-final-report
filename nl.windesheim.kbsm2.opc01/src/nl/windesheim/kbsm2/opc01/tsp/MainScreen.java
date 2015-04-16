@@ -14,26 +14,27 @@ import java.util.ArrayList;
  */
 public class MainScreen
 {
-    private ArrayList<Packets> selectedPackets;
+
+    private ArrayList<Packet> selectedPackets;
     private int adjacencyMatrix[][];
-    
+
     public MainScreen()
     {
-        
+
     }
-    
+
     public void getSelectedPackets()
     {
-        
+
     }
-    
+
     public void setPacketAcquired()
     {
-        
+
     }
-    
+
     public void createAdjecencyMatrix()
     {
-        
+
     }
 }
