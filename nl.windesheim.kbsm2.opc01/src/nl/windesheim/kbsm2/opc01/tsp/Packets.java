@@ -6,14 +6,12 @@
 package nl.windesheim.kbsm2.opc01.tsp;
 
 import java.awt.Point;
-import java.util.ArrayList;
 
 /**
  *
  * @author Gebruiker
  */
-public class MainScreen
+public class Packets extends Point
 {
 
-    private ArrayList<Packets> selectedPackets;
 }
