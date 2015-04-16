@@ -28,11 +28,6 @@ public class MainScreen
 
     }
 
-    public void setPacketAcquired()
-    {
-
-    }
-
     public void createAdjecencyMatrix()
     {
 
