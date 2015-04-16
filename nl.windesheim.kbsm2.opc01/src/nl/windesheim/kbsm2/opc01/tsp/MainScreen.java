@@ -15,5 +15,5 @@ import java.util.ArrayList;
 public class MainScreen
 {
 
-    private ArrayList<Packets> selectedPackets;
+    private ArrayList<Packet> selectedPackets;
 }
