@@ -13,11 +13,30 @@ import javax.swing.*;
  */
 public class HoofdScherm extends JFrame{
     
+    private JCheckBox firstFit;
+    private JCheckBox bestFit;
+    private JCheckBox decreasingOrder;
+    
     public HoofdScherm(){
         setTitle("Selectie menu BPP simulator");
         setSize(400, 400);
         GroupLayout layout = new GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
+        layout.setAutoCreateGaps(true);
+        layout.setAutoCreateContainerGaps(true);
         
+        //checkboxes
+        firstFit = new JCheckBox();
+        bestFit = new JCheckBox();
+        decreasingOrder = new JCheckBox();
+        
+        //text
+        JLabel a = new JLabel("Selecteer algoritmes");
+        
+        //add
+        add(a);
+        add(firstFit);
+        add(bestFit);
+        add(decreasingOrder);
     }
 }
