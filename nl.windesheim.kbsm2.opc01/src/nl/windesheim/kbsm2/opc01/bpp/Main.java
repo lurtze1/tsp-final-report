@@ -5,6 +5,8 @@
  */
 package nl.windesheim.kbsm2.opc01.bpp;
 
+import javax.swing.*;
+
 /**
  *
  * @author W7Home
@@ -12,6 +14,7 @@ package nl.windesheim.kbsm2.opc01.bpp;
 public class Main {
     
     public static void Main (String[] args){
-        
+        HoofdScherm b = new HoofdScherm();
+        b.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
     }
 }
