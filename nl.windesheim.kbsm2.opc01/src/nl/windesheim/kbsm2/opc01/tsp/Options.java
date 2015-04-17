@@ -16,8 +16,7 @@ public class Options extends JDialog implements ActionListener
     public Options(JFrame frame)
     {
         super(frame,true);
-        setSize(400,400);
-        setVisible(true);
+        setSize(400,400);        
         setTitle("Instellingen");
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setLayout(new FlowLayout());
@@ -27,6 +26,8 @@ public class Options extends JDialog implements ActionListener
         add(grootte1);
         add(grootte2);
         add(maak);
+        
+        setVisible(true);        
     }
 
     public int getHeight()
