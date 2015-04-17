@@ -36,12 +36,20 @@ public class HoofdScherm extends JDialog {
         JLabel a = new JLabel("Selecteer algoritmes");
 
         //layout
-        layout.setHorizontalGroup(layout.createSequentialGroup()
-                .addGroup(layout.createParallelGroup(GroupLayout.Alignment.LEADING))
+        layout.setHorizontalGroup(
+                layout.createSequentialGroup()
                         .addComponent(a)
                         .addComponent(firstFit)
                         .addComponent(bestFit)
                         .addComponent(decreasingOrder)
+        );
+        layout.setVerticalGroup(
+                layout.createSequentialGroup()
+                    .addGroup(layout.createParallelGroup(GroupLayout.Alignment.BASELINE)
+                    .addComponent(a)
+                    .addComponent(firstFit)
+                    .addComponent(bestFit)
+                    .addComponent(decreasingOrder))
         );
 
         //settings
