@@ -53,6 +53,6 @@ public class HoofdScherm extends JDialog {
         );
 
         //settings
-        setVisible(true);
+        
     }
 }
