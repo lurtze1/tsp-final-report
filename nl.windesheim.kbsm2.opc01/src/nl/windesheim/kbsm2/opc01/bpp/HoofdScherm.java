@@ -11,7 +11,7 @@ import javax.swing.*;
  *
  * @author W7Home
  */
-public class HoofdScherm extends JDialog {
+public class HoofdScherm extends JFrame {
 
     private JCheckBox firstFit;
     private JCheckBox bestFit;
