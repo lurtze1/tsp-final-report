@@ -10,9 +10,7 @@ public class MainScreen extends JFrame implements ActionListener
     private JRadioButton neighbour;
     private JRadioButton bruteforce;
     private JRadioButton genetic;
-    private JLabel neighbour2;
-    private JLabel bruteforce2;
-    private JLabel genetic2;
+    private JButton settings;
     private JButton start;
 
     private ArrayList<Packet> selectedPackets;
@@ -26,12 +24,10 @@ public class MainScreen extends JFrame implements ActionListener
         this.setLayout(new FlowLayout());
         this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 
-        neighbour = new JRadioButton();
-        neighbour2 = new JLabel();        
-        bruteforce = new JRadioButton();
-        bruteforce2 = new JLabel();
-        genetic = new JRadioButton();
-        genetic2 = new JLabel();
+        neighbour = new JRadioButton("Nearest Nieghbour");       
+        bruteforce = new JRadioButton("Bruteforce");       
+        genetic = new JRadioButton("Genetic"); 
+        settings = new JButton("Instellingen");
         start = new JButton("Start Simulatie");
 
         start.addActionListener(this);
@@ -39,6 +35,7 @@ public class MainScreen extends JFrame implements ActionListener
         add(neighbour);
         add(bruteforce);
         add(genetic);
+        add(settings);
         add(start);
     }
 
@@ -55,9 +52,10 @@ public class MainScreen extends JFrame implements ActionListener
     @Override
     public void actionPerformed(ActionEvent e)
     {
-        if(e.getSource() == start)
+        if(e.getSource() == settings)
         {
-            
+            Options instellingen = new Options(this);
+            instellingen.setVisible(true);
         }
     }
 }
