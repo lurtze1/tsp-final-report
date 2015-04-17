@@ -16,16 +16,19 @@ public class Options extends JDialog implements ActionListener
     public Options(JFrame frame)
     {
         super(frame,true);
-        setSize(400,400);
-        setTitle("Instellingen");
-        setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        setLayout(new FlowLayout());
+        setSize(400,400);        
+        setTitle("Instellingen");        
+        setLayout(new FlowLayout());        
         
         maak = new JButton("Maak aan");
+        grootte1 = new JComboBox(getallen);
+        grootte2= new JComboBox(getallen);
         
         add(grootte1);
         add(grootte2);
         add(maak);
+        
+        setVisible(true);        
     }
 
     public int getHeight()
@@ -43,4 +46,5 @@ public class Options extends JDialog implements ActionListener
     {
         
     }
+        
 }
