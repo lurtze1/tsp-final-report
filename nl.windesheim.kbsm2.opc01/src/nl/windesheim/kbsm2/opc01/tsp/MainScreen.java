@@ -19,11 +19,11 @@ public class MainScreen extends JFrame implements ActionListener
 
     public MainScreen()
     {
-        this.setVisible(true);
-        this.setSize(800, 800);
-        this.setTitle("TSP Simulator");
-        this.setLayout(new FlowLayout());
-        this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        setVisible(true);
+        setSize(800, 800);
+        setTitle("TSP Simulator");
+        setLayout(new FlowLayout());
+        setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 
         neighbour = new JRadioButton("Nearest Nieghbour");
         bruteforce = new JRadioButton("Bruteforce");
