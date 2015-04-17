@@ -12,7 +12,7 @@ public class MainScreen extends JFrame implements ActionListener
     private JRadioButton genetic;
     private JLabel neighbour2;
     private JLabel bruteforce2;
-    private JLabel genentic2;
+    private JLabel genetic2;
     private JButton start;
 
     private ArrayList<Packet> selectedPackets;
@@ -27,8 +27,11 @@ public class MainScreen extends JFrame implements ActionListener
         this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 
         neighbour = new JRadioButton();
+        neighbour2 = new JLabel();        
         bruteforce = new JRadioButton();
+        bruteforce2 = new JLabel();
         genetic = new JRadioButton();
+        genetic2 = new JLabel();
         start = new JButton("Start Simulatie");
 
         start.addActionListener(this);
