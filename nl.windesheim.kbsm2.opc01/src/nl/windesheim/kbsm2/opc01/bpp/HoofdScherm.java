@@ -38,7 +38,10 @@ public class HoofdScherm extends JDialog {
         //layout
         layout.setHorizontalGroup(layout.createSequentialGroup()
                 .addGroup(layout.createParallelGroup(GroupLayout.Alignment.LEADING))
-                        .addComponent(panel)
+                        .addComponent(a)
+                        .addComponent(firstFit)
+                        .addComponent(bestFit)
+                        .addComponent(decreasingOrder)
         );
 
         //settings
