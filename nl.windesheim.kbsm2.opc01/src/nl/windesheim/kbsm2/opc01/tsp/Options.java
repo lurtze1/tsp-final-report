@@ -17,11 +17,12 @@ public class Options extends JDialog implements ActionListener
     {
         super(frame,true);
         setSize(400,400);        
-        setTitle("Instellingen");
-        setDefaultCloseOperation(JDialog.DISPOSE_ON_CLOSE);
-        setLayout(new FlowLayout());
+        setTitle("Instellingen");        
+        setLayout(new FlowLayout());        
         
         maak = new JButton("Maak aan");
+        grootte1 = new JComboBox(getallen);
+        grootte2= new JComboBox(getallen);
         
         add(grootte1);
         add(grootte2);
