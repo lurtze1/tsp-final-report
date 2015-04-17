@@ -7,6 +7,7 @@ import javax.swing.*;
 
 public class MainScreen extends JFrame implements ActionListener
 {
+
     private JRadioButton neighbour;
     private JRadioButton bruteforce;
     private JRadioButton genetic;
@@ -24,9 +25,9 @@ public class MainScreen extends JFrame implements ActionListener
         this.setLayout(new FlowLayout());
         this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 
-        neighbour = new JRadioButton("Nearest Nieghbour");       
-        bruteforce = new JRadioButton("Bruteforce");       
-        genetic = new JRadioButton("Genetic"); 
+        neighbour = new JRadioButton("Nearest Nieghbour");
+        bruteforce = new JRadioButton("Bruteforce");
+        genetic = new JRadioButton("Genetic");
         settings = new JButton("Instellingen");
         start = new JButton("Start Simulatie");
 
@@ -48,14 +49,21 @@ public class MainScreen extends JFrame implements ActionListener
     {
 
     }
-    
+
     @Override
     public void actionPerformed(ActionEvent e)
     {
-        if(e.getSource() == settings)
+        if (e.getSource() == settings)
         {
             Options instellingen = new Options(this);
             instellingen.setVisible(true);
+        }
+        if (e.getSource() == start)
+        {
+            SimulationResults results = new SimulationResults(this);
+            VisualScreen visual = new VisualScreen(this);
+            results.setVisible(true);
+
         }
     }
 }
