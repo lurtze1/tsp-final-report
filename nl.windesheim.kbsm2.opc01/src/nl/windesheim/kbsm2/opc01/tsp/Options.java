@@ -18,7 +18,7 @@ public class Options extends JDialog implements ActionListener
         super(frame,true);
         setSize(400,400);        
         setTitle("Instellingen");
-        setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        setDefaultCloseOperation(JDialog.DISPOSE_ON_CLOSE);
         setLayout(new FlowLayout());
         
         maak = new JButton("Maak aan");
