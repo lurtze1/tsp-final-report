@@ -20,13 +20,14 @@ public class SimulationResults extends JDialog implements ActionListener {
     private int fieldY;
     private JLabel algoritme, tijd, vakjes, veld;
 
-    public SimulationResults(JFrame frame) {
+    public SimulationResults(JFrame frame)
+    {
         super(frame, true);
 
         GroupLayout layout = new GroupLayout(this.getContentPane());
         this.getContentPane().setLayout(layout);
         setTitle("Options");
-        setSize(400, 800);
+        setSize(800, 800);
         add(algoritme = new JLabel("algoritme"));
         add(tijd = new JLabel("tijd"));
         add(vakjes = new JLabel("vakjes"));
@@ -52,7 +53,8 @@ public class SimulationResults extends JDialog implements ActionListener {
         setVisible(true);
     }
 
-    public void actionPerformed(ActionEvent e) {
+    public void actionPerformed(ActionEvent e)
+    {
 
     }
 
