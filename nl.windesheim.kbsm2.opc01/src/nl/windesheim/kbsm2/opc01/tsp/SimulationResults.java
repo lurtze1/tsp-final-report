@@ -21,7 +21,7 @@ public class SimulationResults extends JDialog implements ActionListener {
 
     public SimulationResults(JFrame frame) {
         super(frame, true);
-        //GroupLayout layout = new GroupLayout(this);
+
         FlowLayout layout = new FlowLayout();
         setLayout(layout);
         setTitle("Options");
