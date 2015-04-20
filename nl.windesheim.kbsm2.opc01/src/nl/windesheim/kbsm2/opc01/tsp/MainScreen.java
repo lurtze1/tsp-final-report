@@ -32,7 +32,7 @@ public class MainScreen extends JFrame implements ActionListener
         start = new JButton("Start Simulatie");
 
         settings.addActionListener(this);
-start.addActionListener(this);
+        start.addActionListener(this);
         add(neighbour);
         add(bruteforce);
         add(genetic);
