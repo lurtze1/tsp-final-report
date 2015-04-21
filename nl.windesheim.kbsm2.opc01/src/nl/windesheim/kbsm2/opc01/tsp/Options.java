@@ -5,10 +5,8 @@ import java.awt.event.*;
 import javax.swing.*;
 
 public class Options extends JDialog implements ActionListener
-{
-    private int height;
-    private int width;
-    private String[] getallen = { "1","2","3","4","5","6","7","8","9" };
+{    
+    private String[] getallen = { "1","2","3","4","5","6","7","8","9","10","11","12","13","14","15","16","17","18","19","20" };
     private JButton maak;
     private JComboBox grootte1 = new JComboBox(getallen);
     private JComboBox grootte2 = new JComboBox(getallen);
@@ -28,23 +26,15 @@ public class Options extends JDialog implements ActionListener
         add(grootte2);
         add(maak);
         
+        maak.addActionListener(this);
+        
         setVisible(true);        
-    }
-
-    public int getHeight()
-    {
-        return height;
-    }
-
-    public int getWidth()
-    {
-        return width;
-    }
+    }    
 
     @Override
     public void actionPerformed(ActionEvent e)
     {
-        
+        setVisible(false);
     }
         
 }
