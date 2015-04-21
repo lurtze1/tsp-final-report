@@ -11,35 +11,48 @@ import javax.swing.*;
  *
  * @author W7Home
  */
-public class HoofdScherm extends JFrame{
-    
+public class HoofdScherm extends JFrame {
+
     private JCheckBox firstFit;
     private JCheckBox bestFit;
     private JCheckBox decreasingOrder;
-    
-    public HoofdScherm(){
+
+    public HoofdScherm() {
+        JPanel panel = new JPanel();
+        panel.setBorder( BorderFactory.createEmptyBorder( 10, 10, 10, 10 ) );
+        GroupLayout layout = new GroupLayout(panel);
+        panel.setLayout(layout);
+        layout.setAutoCreateGaps(true);
+
         setTitle("Selectie menu BPP simulator");
         setSize(400, 400);
-        GroupLayout layout = new GroupLayout(getContentPane());
-        getContentPane().setLayout(layout);
-        layout.setAutoCreateGaps(true);
-        layout.setAutoCreateContainerGaps(true);
-        
+
         //checkboxes
         firstFit = new JCheckBox();
         bestFit = new JCheckBox();
         decreasingOrder = new JCheckBox();
-        
+
         //text
         JLabel a = new JLabel("Selecteer algoritmes");
-        
-        //add
-        add(a);
-        add(firstFit);
-        add(bestFit);
-        add(decreasingOrder);
-        
+
+        //layout
+        layout.setHorizontalGroup(
+                layout.createSequentialGroup()
+                        .addComponent(a)
+                        .addComponent(firstFit)
+                        .addComponent(bestFit)
+                        .addComponent(decreasingOrder)
+        );
+        layout.setVerticalGroup(
+                layout.createSequentialGroup()
+                    .addGroup(layout.createParallelGroup(GroupLayout.Alignment.BASELINE)
+                    .addComponent(a)
+                    .addComponent(firstFit)
+                    .addComponent(bestFit)
+                    .addComponent(decreasingOrder))
+        );
+
         //settings
-        setVisible(true);
+        
     }
 }
