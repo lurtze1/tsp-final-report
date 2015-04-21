@@ -6,6 +6,7 @@
 package nl.windesheim.kbsm2.opc01.tsp;
 
 import java.awt.Point;
+import java.util.ArrayList;
 
 /**
  *
@@ -48,4 +49,5 @@ public class Packet extends Point
     {
         return this.distance(that);
     }
+
 }
