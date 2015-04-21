@@ -77,4 +77,16 @@ public class Algoritme {
         return nextFit;
     }
 
+    public void setFirstFit(boolean firstFit) {
+        this.firstFit = firstFit;
+    }
+
+    public void setBestFit(boolean bestFit) {
+        this.bestFit = bestFit;
+    }
+
+    public void setNextFit(boolean nextFit) {
+        this.nextFit = nextFit;
+    }
+
 }
