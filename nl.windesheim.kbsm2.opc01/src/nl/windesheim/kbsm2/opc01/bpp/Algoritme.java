@@ -29,6 +29,14 @@ public class Algoritme {
         this.bestFit = bestFit;
         this.firstFit = firstFit;
         this.nextFit = nextFit;
+        if(this.bestFit){
+            algoritmeFirstFit();
+        } else if(this.firstFit){
+            algoritmeBestFit();
+        } else if(this.nextFit){
+            algoritmeNextFit();
+        }
+        
     }
 
     public void algoritmeFirstFit() {
