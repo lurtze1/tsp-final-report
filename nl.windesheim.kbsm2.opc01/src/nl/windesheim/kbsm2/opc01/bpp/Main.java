@@ -15,7 +15,6 @@ public class Main {
     
     public static void main (String[] args){
         HoofdScherm b = new HoofdScherm();
-        b.pack();
         b.setVisible(true);
         b.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
     }
