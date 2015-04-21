@@ -6,14 +6,15 @@ import javax.swing.*;
 
 public class Options extends JDialog implements ActionListener
 {    
-    private String[] getallen = { "1","2","3","4","5","6","7","8","9","10","11","12","13","14","15","16","17","18","19","20" };
-    private JButton maak;
+    private String[] getallen = { "1","2","3","4","5","6","7","8","9","10","11","12","13","14","15","16","17","18","19","20" };    
     private JComboBox grootte1 = new JComboBox(getallen);
-    private JComboBox grootte2 = new JComboBox(getallen);
+    private JComboBox grootte2 = new JComboBox(getallen);    
+    private JButton maak;    
 
     public Options(JFrame frame)
     {
         super(frame,true);
+        
         setSize(400,400);        
         setTitle("Instellingen");        
         setLayout(new FlowLayout());        
@@ -35,6 +36,10 @@ public class Options extends JDialog implements ActionListener
     public void actionPerformed(ActionEvent e)
     {
         setVisible(false);
+        String heightstr = grootte1.getSelectedItem().toString();
+        String widthstr = grootte2.getSelectedItem().toString();
+        int height = Integer.parseInt(heightstr);
+        int width = Integer.parseInt(widthstr);
     }
-
+        
 }
