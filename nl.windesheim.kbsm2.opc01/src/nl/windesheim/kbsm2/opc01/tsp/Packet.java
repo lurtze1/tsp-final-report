@@ -44,4 +44,8 @@ public class Packet extends Point
         this.packetAcquired = packetAcquired;
     }
 
+    public double getDistance(Point that)
+    {
+        return this.distance(that);
+    }
 }
