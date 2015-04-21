@@ -14,9 +14,9 @@ import java.util.*;
 public class Algoritme {
 
     private String naam;
-    private boolean firstFit;
-    private boolean bestFit;
-    private boolean nextFit;
+    private boolean firstFit = false;
+    private boolean bestFit = false;
+    private boolean nextFit = false;
 
     private int doosGrootte;
     private ArrayList<Integer> paketten;
@@ -24,11 +24,8 @@ public class Algoritme {
     private int aantalDozen;
     private ArrayList<ArrayList<Integer>> dozen;
 
-    public Algoritme(String naam, boolean bestFit, boolean firstFit, boolean nextFit) {
+    public Algoritme(String naam) {
         this.naam = naam;
-        this.bestFit = bestFit;
-        this.firstFit = firstFit;
-        this.nextFit = nextFit;
         if(this.bestFit){
             algoritmeFirstFit();
         } else if(this.firstFit){
@@ -65,15 +62,15 @@ public class Algoritme {
 
     }
 
-    public boolean isFirstFit() {
+    public boolean getFirstFit() {
         return firstFit;
     }
 
-    public boolean isBestFit() {
+    public boolean getBestFit() {
         return bestFit;
     }
 
-    public boolean isNextFit() {
+    public boolean getNextFit() {
         return nextFit;
     }
 

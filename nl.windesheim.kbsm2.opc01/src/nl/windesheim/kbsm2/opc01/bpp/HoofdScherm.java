@@ -5,11 +5,14 @@
  */
 package nl.windesheim.kbsm2.opc01.bpp;
 
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+
 /**
  *
  * @author W7Home
  */
-public class HoofdScherm extends javax.swing.JFrame {
+public class HoofdScherm extends javax.swing.JFrame implements ActionListener {
 
     /**
      * Creates new form HoofdScherm2
@@ -31,7 +34,6 @@ public class HoofdScherm extends javax.swing.JFrame {
     @SuppressWarnings("unchecked")
     // <editor-fold defaultstate="collapsed" desc="Generated Code">                          
     private void initComponents() {
-
         jLabel6 = new javax.swing.JLabel();
         jPanel2 = new javax.swing.JPanel();
         jPanel1 = new javax.swing.JPanel();
@@ -62,11 +64,7 @@ public class HoofdScherm extends javax.swing.JFrame {
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
         jCheckBox1.setText("First Fit");
-        jCheckBox1.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jCheckBox1ActionPerformed(evt);
-            }
-        });
+        this.jCheckBox1.addActionListener(this);
 
         jCheckBox2.setText("Best Fit");
         jCheckBox2.addActionListener(new java.awt.event.ActionListener() {
@@ -173,8 +171,16 @@ public class HoofdScherm extends javax.swing.JFrame {
         pack();
     }// </editor-fold>                        
 
-    private void jCheckBox1ActionPerformed(java.awt.event.ActionEvent evt) {
-        // TODO add your handling code here:
+    public void actionPerformed(ActionEvent e) {
+        if (e.getSource() == jCheckBox1) {
+            boolean checked = jCheckBox1.isSelected();
+            if (checked) {
+                System.out.println("Check box state is selected");
+              //  boolean test = ;
+            } else {
+                System.out.println("Check box state is not selected");
+            }
+        }
     }
 
     private void jCheckBox2ActionPerformed(java.awt.event.ActionEvent evt) {
@@ -187,41 +193,6 @@ public class HoofdScherm extends javax.swing.JFrame {
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {
         // TODO add your handling code here:
-    }
-
-    /**
-     * @param args the command line arguments
-     */
-    public static void main(String args[]) {
-        /* Set the Nimbus look and feel */
-        //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
-        /* If Nimbus (introduced in Java SE 6) is not available, stay with the default look and feel.
-         * For details see http://download.oracle.com/javase/tutorial/uiswing/lookandfeel/plaf.html 
-         */
-        try {
-            for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {
-                if ("Nimbus".equals(info.getName())) {
-                    javax.swing.UIManager.setLookAndFeel(info.getClassName());
-                    break;
-                }
-            }
-        } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(HoofdScherm2.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(HoofdScherm2.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(HoofdScherm2.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(HoofdScherm2.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        }
-        //</editor-fold>
-
-        /* Create and display the form */
-        java.awt.EventQueue.invokeLater(new Runnable() {
-            public void run() {
-                new HoofdScherm2().setVisible(true);
-            }
-        });
     }
 
     // Variables declaration - do not modify                     
